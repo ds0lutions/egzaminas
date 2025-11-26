@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hind Madurai", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #000000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1289af;
+}
+
+.contact-btn {
+  background: #1289af;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-btn:hover {
+  background: #0097a7;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("Nuotraukos/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 5% 100px;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 600;
+  max-width: 700px;
+  margin-bottom: 20px;
+  line-height: 62px;
+}
+
+.hero-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 25%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.view-case-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1289af;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  width: fit-content;
+  transition: background 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.view-site-btn:hover {
+  background: #0097a7;
+}
+
+/* Content Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0 60px;
+  background: white;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #333333;
+  line-height: 40px;
+}
+
+.about-text {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.about-image {
+  width: 100%;
+  height: 550px;
+  background: url("Nuotraukos/video.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  margin-top: 40px;
+}
+
+/* Challenge Section */
+.challenge-section {
+  padding: 5px 0;
+  background: white;
+}
+
+.challenge-text {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.quote-box {
+  border-left: 4px solid #1289af;
+  padding: 24px 32px;
+  background: #f8f8f8;
+  margin: 40px auto;
+  max-width: 600px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #333333;
+  line-height: 40px;
+}
+
+.challenge-image {
+  width: 100%;
+  height: 550px;
+  background-image: url("Nuotraukos/architecture.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  margin-top: 40px;
+}
+
+.challenge-desc {
+  margin: 20px 0 30px 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #666666;
+}
+/* Solution Section */
+.solution-section {
+  padding: 5px 0;
+  background: white;
+}
+
+.solution-text {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.solution-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.solution-image {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+.solution-image-1 {
+  background: url("Nuotraukos/solution1.jpg");
+}
+
+.solution-image-2 {
+  background: url("Nuotraukos/solution2.jpg");
+}
+
+.solution-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.solution-card p {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 80px 20px 60px;
+    min-height: 500px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 100%;
+  }
+
+  .hero-label {
+    font-size: 13px;
+  }
+
+  .view-case-btn {
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .about-section,
+  .challenge-section,
+  .solution-section {
+    padding: 50px 0 40px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .about-text,
+  .challenge-text,
+  .solution-text,
+  .solution-card p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .about-image,
+  .challenge-image {
+    height: 350px;
+    margin-bottom: 0;
+  }
+
+  .solution-image {
+    height: 260px;
+  }
+
+  .quote-box {
+    padding: 20px 24px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px 0;
+  }
+
+  .challenge-desc {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .solution-images,
+  .solution-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 60px 16px 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .view-case-btn {
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .about-section,
+  .challenge-section,
+  .solution-section {
+    padding: 40px 0 30px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .about-text,
+  .challenge-text,
+  .solution-text,
+  .solution-card p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .about-image,
+  .challenge-image {
+    height: 250px;
+    margin-bottom: 0;
+  }
+
+  .solution-image {
+    height: 220px;
+  }
+
+  .quote-box {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .challenge-desc {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+}
