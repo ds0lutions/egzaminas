@@ -1,2 +1,3 @@
 # egzaminas
-Egzaminas
+Egzaminas - Danielius 
+Vilnius Coding
